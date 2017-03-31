@@ -1,0 +1,39 @@
+{
+  "name": "printkaari_ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemraj15/Printkaari-UI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hemraj15/Printkaari-UI/issues"
+  },
+  "homepage": "https://github.com/hemraj15/Printkaari-UI#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.5",
+    "browser-sync": "^2.18.7",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.3.11",
+    "postcss-import": "^9.1.0",
+    "postcss-mixins": "^5.4.1",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^3.0.0",
+    "gulp-nodemon": "^2.2.1"
+  },
+  "dependencies": {
+    "angular-storage": "0.0.15",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "js-sha512": "^0.3.0"
+  }
+}

@@ -1,0 +1,51 @@
+<div class="td_container td_margin_from_header">
+	<div class="page-section">
+		<div class="wrapper">
+			<h1 class="headline headline--center">Cart</h1>
+			<div ng-show="cart.noOfProduct < 1">
+				<p>Your cart is empty, go add product don't left your cart empty</p>
+			</div>
+			<div ng-show="cart.noOfProduct > 0">
+				<div class="td-row td-row__gutter">
+					<div class="td-row-9">
+						<p>You Need to Pay &#x20B9; {{cart.netTotal}} for {{cart.noOfProduct}} products</p>
+						<div class="td-row td-row__gutter td-row--header td-row--tb-margin">
+							<div class="td-row-3">Product</div>
+							<div class="td-row-2">Price</div>
+							<div class="td-row-2">Discount</div>
+							<div class="td-row-2">Quantity</div>
+							<div class="td-row-2">Net Price</div>
+							<div class="td-row-1"></div>
+						</div>
+						<div class="td-row td-row__gutter td-row--tb-margin" ng-repeat="product in cart.cartData">
+							<div class="td-row-3">Order {{$index + 1}}</div>
+							<div class="td-row-2">{{product.Amount}}</div>
+							<div class="td-row-2">{{product.Discount}}</div>
+							<div class="td-row-2">1</div>
+							<div class="td-row-2">{{product.amountToBePaid}}</div>
+							<div class="td-row-1">
+						      <i class="glyphicon glyphicon-trash" aria-hidden="true" ng-click="cart.removeProduct(product.orderId)"></i>
+							</div>
+						</div>
+					</div>
+					<div class="td-row-3 generic-content generic-content--large td-row--t-margin">
+						<div class="td-row td-row--tb-margin">
+							<div class="td-row-9">Total Price</div>
+							<div class="td-row-3">{{cart.totalAmount}}</div>
+						</div>
+						<div class="td-row td-row--tb-margin">
+							<div class="td-row-9">Discount</div>
+							<div class="td-row-3">{{cart.totalDiscount}}</div>
+						</div>
+						<div class="td-row td-row--tb-margin">
+							<div class="td-row-9">Total Nett. Price</div>
+							<div class="td-row-3">{{cart.netTotal}}</div>
+						</div>
+						<div class="btn btn-primary" ng-click="cart.checkout()">checkout</div>
+					</div>
+				</div>
+			</div>
+			<p>&#42; conditions apply</p>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,21 @@
+{
+	"customizedproduct": {
+		"t-shirt": {
+			"pageTitle": "T-shirts",
+			"products":[
+				{
+					"title": "Sample 1",
+					"imgUrl": "/samples/Tshirts/tee sample 1.jpg"
+				},
+				{
+					"title": "Sample 2",
+					"imgUrl": "/samples/Tshirts/tee sample 2.jpg"
+				},
+				{
+					"title": "Sample 3",
+					"imgUrl": "/samples/Tshirts/tee sample 3.jpg"
+				}
+			]
+		}
+	}
+}

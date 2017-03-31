@@ -1,0 +1,56 @@
+.td-row{
+
+	@mixin clearfix;
+
+	&__gutter{
+		margin-right: -65px;
+	}
+
+	&__gutter > div{
+		padding-right: 65px;
+	}
+
+	&--header{
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	&--tb-margin{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	&--t-margin{
+		margin-top: 50px;
+	}
+
+	&-9{
+		float: left;
+		width: 75%;
+	}
+
+	&-8{
+		float: left;
+		width: 67%;
+	}
+
+	&-4{
+		float: left;
+		width: 33%;
+	}
+
+	&-3{
+		float: left;
+		width: 25%;
+	}
+
+	&-2{
+		float: left;
+		width: 16.66%;
+	}
+
+	&-1{
+		float: left;
+		width: 8.33%;
+	}
+}

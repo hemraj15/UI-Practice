@@ -1,0 +1,11 @@
+.float{
+	@mixin clearfix;
+
+	&__left{
+		float: left;
+	}
+
+	&__right{
+		float: right;
+	}
+}

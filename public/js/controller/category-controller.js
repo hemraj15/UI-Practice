@@ -1,0 +1,5 @@
+
+
+app.controller('categoryController', [function(){
+	
+}]);

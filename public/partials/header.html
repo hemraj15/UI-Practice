@@ -1,0 +1,77 @@
+ <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand pull-left">
+        <a href="/"><img src="/img/Untitled-1.png" alt="" style="width: 137px;height: 45px;margin-top: -13px;"/></a>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+
+        <li class="dropdown" id="office"><a href="/officeEsential/Office-esssential.html" data-toggle="dropdown">Office Essentials<i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="/officeEsential/letterheades.html">LetterHeads</a></li>
+            <li><a href="/officeEsential/buisness.html">Bussiness Cards</a></li>
+            <li><a href="/officeEsential/Brochures.html">Brochures</a></li>
+            <li><a href="/officeEsential/Envelopes.html">Envelopes</a></li> 
+            <li><a href="/officeEsential/Receipt-books.html">Receipt Books</a></li>
+            <li><a href="/officeEsential/multi-color.html">Multi color Files</a></li>  
+            <li><a href="/officeEsential/folder.html">Folders</a></li>
+            <li><a href="/officeEsential/icard.html">I-Cards</a></li> 
+          </ul>
+        </li>
+
+        <li class="dropdown" id="marketing">
+          <a href="/marketingEssential/marketing-essential.html" class="dropdown-toggle" >Marketing Essentials <i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="/marketingEssential/posters.html">Posters</a></li>
+            <li><a href="/marketingEssential/MultiColor-pamphlets.html">MultiColor pamphlets</a></li> 
+            <li><a href="/marketingEssential/Leaflets.html">Leaflets</a></li> 
+            <li><a href="/marketingEssential/mbrochures.html">Brochures</a></li> 
+            <li><a href="/marketingEssential/Glow-shine-Boards.html">Glow shine Boards</a></li> 
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/customized-products/customizedProduct.html" class="dropdown-toggle">Customized Products <i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="/customized-products/t-shirt.html">T-Shirt</a></li>
+            <li><a href="/customized-products/cups.html">Cups</a></li> 
+            <li><a href="/customized-products/bags.html">Bags</a></li>
+          </ul>
+        </li> 
+
+        <li class="dropdown"><a href="/hospital-doctors/hospital-essential.html" class="dropdown-toggle" >Hospital/Doctors Essentials <i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="/hospital-doctors/Prescription-pads.html">Prescription pads</a></li>
+            <li><a href="/hospital-doctors/Business-Cards.html">Business Cards</a></li> 
+            <li><a href="/hospital-doctors/Folders-files.html">Folders/files</a></li> 
+            <li><a href="/hospital-doctors/pamphlets.html">pamphlets </a></li> 
+            <li><a href="/hospital-doctors/Referral-Pads.html">Referral Pads</li>
+            <li><a href="/hospital-doctors/Envelopes.html">Envelopes</a></li> 
+            <li><a href="/hospital-doctors/Brochures.html">Brochures</a></li>
+            <li><a href="/hospital-doctors/opd.html">OPD Registers</a></li>
+          </ul>
+        </li> 
+
+        <li><a href="/#!product/college">College Projects</a></li> 
+        <li><a href="/#!cart"><i class="fa fa-shopping-cart"></i> Cart <span class="badge">{{navCtl.noOfProduct}}</span></a></li>
+        
+        <li ng-class="{dropdown : navCtl.isLogin}">
+          <a href="/#!auth/login" ng-show="!navCtl.isLogin"><i class="fa fa-lock"></i> Login</a>
+          <a class="dropdown-toggle" ng-show="navCtl.isLogin"> {{navCtl.loginData.full_name}} <i class="fa fa-angle-down"></i></a>
+          <ul ng-show="navCtl.isLogin" class="dropdown-menu">
+		        <li><a  href="/#!myprofile">My Profile</a></li>
+            <li><a>User Setting</a></li>
+            <li><a  ng-click="navCtl.logout()">Logout</a></li>
+				  </ul>       
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

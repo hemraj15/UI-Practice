@@ -1,0 +1,56 @@
+# as a demonstration of an API spec in YAML
+swagger: '2.0'
+info:
+  title: Printkaari API
+  description: Printkaari Java Backend API, all details to make frontend works
+  version: "1.0.0"
+# the domain of the service
+host: printkaari.com:8080
+# array of all schemes that your API supports
+schemes:
+  - http
+# will be prefixed to all paths
+basePath: /printkaari-api
+produces:
+  - application/json
+paths:
+  /app/login:
+    post:
+      summary: to login and get access token to work more
+      description: login generate access token
+      parameters:
+        - name: body
+          in: body
+          description: login object to create the access token for user
+          required: true
+          schema: 
+            $ref: '#/definitions/login'
+      responses:
+        200:
+          description: json object
+          schema: 
+            $ref: '#/definitions/auth'
+
+
+definitions:
+  login:
+    type: object
+    required:
+      - username
+      - password
+    properties:
+      username:
+        type: string
+        description: email id of the user
+      password:
+        type: string
+        description: password of the user
+  auth:
+    type: object
+    properties:
+      access-token: 
+        type: string
+        description: contain access-token which will be send on each post request
+      username: 
+        type: string
+        description: full name of the user

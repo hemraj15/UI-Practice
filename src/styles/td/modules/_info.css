@@ -1,0 +1,44 @@
+.info{
+	width: 100%;
+	border-radius: 10px;
+
+	@mixin atMedium{
+		width: 800px;
+		margin: 0 auto;
+		padding: 50px 0;
+		background-color: $backgroundColorGrey;
+
+		&--t-margin-at-medium{
+			margin-top: 50px;
+		}
+	}
+
+
+
+
+	&__element{
+		padding: 10px;
+
+		@mixin clearfix;
+	}
+
+	&__property{
+		font-size: 1.5rem;
+		width: 150px;
+		float: left;
+
+		@mixin atMedium{
+			font-size: 2.2rem;
+			width: 250px;
+		}
+	}
+
+	&__value{
+		font-size: 1.5rem;
+		float: left;
+
+		@mixin atMedium{
+			font-size: 2.2rem;
+		}
+	}
+}

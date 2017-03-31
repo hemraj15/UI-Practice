@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" ng-app="printkaariApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PrintKaari.com</title>
+    <meta name="description" content="Print Anything on Anything">
+    <meta name="keywords" content="print online bhopal, printkaari, print t-shirt online, print template, print college project, print paper online, print on cup">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/slit-slider.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/td-style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+    <!-- jquery.fancybox.pack -->
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <!-- Owl Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- jquery easing -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- Fullscreen slider -->
+    <script src="js/jquery.slitslider.js"></script>
+    <script src="js/jquery.ba-cond.min.js"></script>
+    <!-- onscroll animation -->
+    <script src="js/wow.min.js"></script>
+    
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-storage.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    
+    <script type="text/javascript" src="js/printkaari-main.js"></script>
+    <script type="text/javascript" src="js/routing.js"></script>
+    <script type="text/javascript" src="js/controller/nav-tab-controller.js"></script>
+    <script type="text/javascript" src="js/controller/dashboard-controller.js"></script>
+    <script type="text/javascript" src="js/controller/welcome-page-controller.js"></script>
+    <script type="text/javascript" src="js/controller/auth-controller.js"></script>
+    <script type="text/javascript" src="js/controller/my-profile-controller.js"></script>
+    <script type="text/javascript" src="js/controller/my-order-controller.js"></script>
+    <script type="text/javascript" src="js/controller/product-controller.js"></script>
+    <script type="text/javascript" src="js/controller/category-controller.js"></script>
+    <script type="text/javascript" src="js/controller/categoryProduct-controller.js"></script>
+    <script type="text/javascript" src="js/controller/cart-controller.js"></script>
+    <script type="text/javascript" src="js/controller/afterpayment-controller.js"></script>
+    <script type="text/javascript" src="js/service/auth-service.js"></script>
+    <script type="text/javascript" src="js/service/cart-service.js"></script>
+    <script type="text/javascript" src="js/factory/location-factory.js"></script>
+    <script type="text/javascript" src="js/factory/auth-factory.js"></script>
+    <script type="text/javascript" src="js/factory/order-factory.js"></script>
+    <script type="text/javascript" src="js/factory/product-factory.js"></script>
+    <script type="text/javascript" src="js/factory/payment-factory.js"></script>
+    <script type="text/javascript" src="js/interceptor/request-interceptor.js"></script>
+    
+    <style>
+    body,h1,h5
+    {
+    font-family:"Raleway", sans-serif;
+    }
+    .panel-default
+    {
+    border-radius:0px;
+    box-shadow: 10px 10px 5px #888888;
+    }
+    
+    .panel-info
+    {
+    border-radius:0px;
+    box-shadow: 10px 10px 5px #888888;
+    }
+    
+    </style>
+  </head>
+  <body ng-controller="mainController as main">
+    
+    <!-- Code for Header goes here -->
+    <page-header></page-header>
+    
+    <!-- All Dynamic uploads will go here-->
+    <div ng-view></div>
+    <!-- Code for Footer goes here -->
+    <page-footer></page-footer>
+    
+    
+    <!-- Twitter Bootstrap -->
+  </body>
+</html>

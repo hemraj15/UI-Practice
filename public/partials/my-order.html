@@ -1,0 +1,20 @@
+<div class="td_container td_margin_from_header">
+	<div class="page-section">
+		<div class="wrapper">
+			<h1 class="headline headline--center">My Orders</h1>
+			<div class="order-section">
+				<div class="order-section__group" ng-repeat="order in myOrder.orderDetails ">
+					<div class="order-section__product" ng-repeat="product in order.products">
+						<div class="order-section__product-img"><img src="img/testi.png"></div>
+						<div class="order-section__product-title"> {{product.name}}</div>
+						<div class="order-section__product-status-text"> Status: <strong>Delivered</strong></div>
+					</div>
+					<div class="order-section__info">
+						<div class="order-section__info-date">Ordered On: </div>
+						<div class="order-section__info-price"> Price: &#x20B9; {{order.orderPrice}}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,63 @@
+.order-section{
+	
+
+	&__group{
+		padding: 20px;
+		border-radius: 20px;
+		border: 1px solid #c7c7c7;
+		box-shadow: 0 0 4px #d7d7d7;
+		margin-bottom: 20px;
+	}
+
+	&__product{
+		background-color: $backgroundColorGrey;
+		padding: 15px;
+		border-radius: 10px;
+		margin-bottom: 10px;
+
+		@mixin clearfix;
+
+		&-img{
+			float: left;
+			width: 40px;
+			height: 40px;
+		}
+
+		&-img > img{
+			width: 40px;
+			height: 40px;
+		}
+
+
+		&-title{
+			float: left;
+			font-size: 3rem;
+			font-weight: 100;
+			margin: 5px 0 0 30px;
+		}
+
+		&-status-text{
+			position: relative;
+			width: 200px;
+			font-weight: 300;
+			top: 10px;
+			margin-top: 20px;
+			float: right;
+		}
+	}
+
+	&__info{
+		padding: 5px;
+
+		@mixin clearfix;
+
+		&-date{
+			float: left;
+		}
+
+		&-price{
+			margin-right: 10px;
+			float: right;
+		}
+	}
+}

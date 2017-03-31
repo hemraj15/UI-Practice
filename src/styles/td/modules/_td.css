@@ -1,0 +1,10 @@
+/*this should be maintain single one because try to adopt new style schema*/
+.td{  
+	&_container{
+	}
+
+	
+	&_margin_from_header{ /*No need for media query as fit for both*/
+		margin-top: 50px;
+	}
+}

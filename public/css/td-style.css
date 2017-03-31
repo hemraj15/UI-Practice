@@ -1,0 +1,305 @@
+body {
+    background-color: #fff;
+    font-family: 'Poiret One', cursive;
+    color: #818181;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+/*this should be maintain single one because try to adopt new style schema*/
+
+.td_container{}
+
+.td_margin_from_header{
+
+    /*No need for media query as fit for both*/
+    margin-top: 50px;
+}
+
+/*No class found in bootstrap hence no need for td prefix*/
+
+.page-section{
+
+	margin-top: 6rem;
+	margin-bottom: 3rem;
+
+}
+
+@media(min-width: 800px) {
+
+    .page-section {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+}
+
+.wrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+@media(min-width: 800px) {
+
+    .wrapper--small {
+        width: 500px;
+    }
+}
+
+.wrapper--xlarge{
+    max-width: 1300px;
+}
+
+.headline{
+	font-size: 2.2rem;
+	text-transform: capitalize;
+	padding: 1rem 0;
+}
+
+@media(min-width: 800px) {
+
+    .headline {
+        font-size: 4rem;
+    }
+}
+
+.headline--center{
+    text-align: center;
+}
+
+.profile-section{
+	border: solid black 1px;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+
+@media(min-width: 800px) {
+
+    .profile-section {
+        max-width: 600px;
+    }
+}
+
+.profile-section-item{
+    margin: 1rem;
+    border: solid grey 1px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.profile-section-item__title{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.profile-section-item__description{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.info{
+	width: 100%;
+	border-radius: 10px;
+}
+
+@media(min-width: 800px) {
+
+    .info {
+        width: 800px;
+        margin: 0 auto;
+        padding: 50px 0;
+        background-color: #f0f0e9;
+    }
+
+    .info--t-margin-at-medium {
+        margin-top: 50px;
+    }
+}
+
+.info__element{
+    padding: 10px;
+}
+
+.info__element::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.info__property{
+    font-size: 1.5rem;
+    width: 150px;
+    float: left;
+}
+
+@media(min-width: 800px) {
+
+    .info__property {
+        font-size: 2.2rem;
+        width: 250px;
+    }
+}
+
+.info__value{
+    font-size: 1.5rem;
+    float: left;
+}
+
+@media(min-width: 800px) {
+
+    .info__value {
+        font-size: 2.2rem;
+    }
+}
+
+.order-section__group{
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #c7c7c7;
+    box-shadow: 0 0 4px #d7d7d7;
+    margin-bottom: 20px;
+}
+
+.order-section__product{
+    background-color: #f0f0e9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.order-section__product::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.order-section__product-img{
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+.order-section__product-img > img{
+    width: 40px;
+    height: 40px;
+}
+
+.order-section__product-title{
+    float: left;
+    font-size: 3rem;
+    font-weight: 100;
+    margin: 5px 0 0 30px;
+}
+
+.order-section__product-status-text{
+    position: relative;
+    width: 200px;
+    font-weight: 300;
+    top: 10px;
+    margin-top: 20px;
+    float: right;
+}
+
+.order-section__info{
+    padding: 5px;
+}
+
+.order-section__info::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.order-section__info-date{
+    float: left;
+}
+
+.order-section__info-price{
+    margin-right: 10px;
+    float: right;
+}
+
+.float::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.float__left{
+    float: left;
+}
+
+.float__right{
+    float: right;
+}
+
+.td-row::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.td-row__gutter{
+    margin-right: -65px;
+}
+
+.td-row__gutter > div{
+    padding-right: 65px;
+}
+
+.td-row--header{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.td-row--tb-margin{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.td-row--t-margin{
+    margin-top: 50px;
+}
+
+.td-row-9{
+    float: left;
+    width: 75%;
+}
+
+.td-row-8{
+    float: left;
+    width: 67%;
+}
+
+.td-row-4{
+    float: left;
+    width: 33%;
+}
+
+.td-row-3{
+    float: left;
+    width: 25%;
+}
+
+.td-row-2{
+    float: left;
+    width: 16.66%;
+}
+
+.td-row-1{
+    float: left;
+    width: 8.33%;
+}
+
+.generic-content{
+	font-size: 1.5rem;
+	line-height: 1.2;
+}
+
+.generic-content--large{
+    font-size: 2.2rem;
+}

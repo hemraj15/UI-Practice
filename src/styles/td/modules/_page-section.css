@@ -1,0 +1,12 @@
+/*No class found in bootstrap hence no need for td prefix*/
+.page-section{
+
+	margin-top: 6rem;
+	margin-bottom: 3rem;
+
+	@mixin atMedium{
+		margin-top: 6rem;
+		margin-bottom: 6rem;
+	}
+
+}
